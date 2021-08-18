@@ -276,7 +276,7 @@ commands:
   write_workspace:
     steps:
       - persist_to_workspace:
-          root: ~/
+          root: ~/app
           paths:
             - project
             - .cache/Cypress

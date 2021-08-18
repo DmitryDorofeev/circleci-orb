@@ -344,12 +344,12 @@ jobs:
         - ~/.npm
         - ~/.cache
     - persist_to_workspace:
-        root: ~/
+        root: ~/app
         paths:
         - project
         - .cache/Cypress
     - attach_workspace:
-        at: ~/
+        at: ~/app
     - run:
         name: Run Cypress tests
         command: 'npx cypress run'

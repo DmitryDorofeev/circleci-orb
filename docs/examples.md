@@ -299,7 +299,7 @@ jobs:
     executor: cypress/base-10
     steps:
       - attach_workspace:
-          at: ~/
+          at: ~/app
       - run: npm run semantic-release
 workflows:
   build:
