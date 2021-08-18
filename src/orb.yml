@@ -573,7 +573,7 @@ jobs:
           steps:
             - run: echo "Assuming dependencies were installed using cypress/install job"
             - attach_workspace:
-                at: ~/
+                at: ~/app
 
       - unless:
           condition: << parameters.parallel >>
@@ -1157,7 +1157,7 @@ examples:
           steps:
             # the workspace saved by cypress/install
             - attach_workspace:
-                at: ~/
+                at: ~/app
             - run: npm run semantic-release
       workflows:
         build:
