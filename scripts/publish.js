@@ -14,7 +14,7 @@ const getPackageVersion = () => {
 }
 
 const loadNameAndVersion = () => {
-  const namespace = 'DmirtyDorofeev'
+  const namespace = 'dmirtydorofeev'
   const orbName = 'cypress'
 
   let name
